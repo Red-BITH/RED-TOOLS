@@ -43,10 +43,10 @@ print_colored("| BY RED_BITH  |", Colors.GREEN)
 
 
 
-print_colored("1.Hedef site haqqinda
+print_colored("""1.Hedef site haqqinda
 2.port scanner
 3.DDOS hucum    
-secim = input(Nov sec:)  ", Colors.YELLOW)
+secim = input(Nov sec:)  """, Colors.YELLOW)
 
 if(secim == '1'):
     hedefsite = input('Hedef site adresi')
