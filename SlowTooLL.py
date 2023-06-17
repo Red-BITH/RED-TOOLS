@@ -48,7 +48,7 @@ print_colored("""1.Hedef site haqqinda
 2.port scanner
 3.DDOS hucum    
   """, Colors.YELLOW)
-secim = input(Nov sec:)
+secim = input("Nov sec:")
 
 if(secim == '1'):
     hedefsite = input('Hedef site adresi')
