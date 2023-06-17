@@ -5,6 +5,23 @@ os.system("apt install dmitry")
 os.system("apt install nmap")
 os.system("clear")
 
+
+
+# Renkli çıktılar için ANSI kaçış dizilerini tanımlayalım
+class Colors:
+    HEADER = '\033[95m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    ENDC = '\033[0m'
+
+# Renkli bir şekilde çıktı vermek için kullanabileceğiniz bir fonksiyon
+def print_colored(text, color):
+    print(color + text + Colors.ENDC)
+
+# Örnek kullanım
+
 print('''
 
         /$$$$$$        /$$              /$$$$$$        /$$      /$$                 /$$$$$$$$        /$$$$$$         /$$$$$$        /$$      
@@ -17,13 +34,20 @@ print('''
        \______/       |________/       \______/       |__/     \__/                   |__/          \______/        \______/       |________/
                                                                                                                                                                                                              
                                                                                                                                                                                                              
-1.Hedef site haqqinda
-2.port scanner
-3.DDOS hucum                                                                                                                                                                                                            
+                                                                                                                                                                                                        
 
 ''')
+print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
+print_colored("|SLOW BITH TOOL|", Colors.RED)
+print_colored("| BY RED_BITH  |", Colors.GREEN)
 
-secim = input('Nov sec:')
+
+
+print_colored("1.Hedef site haqqinda
+2.port scanner
+3.DDOS hucum    
+secim = input(Nov sec:)  ", Colors.YELLOW)
+
 if(secim == '1'):
     hedefsite = input('Hedef site adresi')
     os.system('dmitry ' + hedefsite)
