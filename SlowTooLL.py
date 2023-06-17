@@ -46,7 +46,8 @@ print_colored("| BY RED_BITH  |", Colors.GREEN)
 print_colored("""1.Hedef site haqqinda
 2.port scanner
 3.DDOS hucum    
-secim = input(Nov sec:)  """, Colors.YELLOW)
+  """, Colors.YELLOW)
+secim = input(Nov sec:)
 
 if(secim == '1'):
     hedefsite = input('Hedef site adresi')
