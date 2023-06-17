@@ -73,5 +73,5 @@ elif(secim == '3'):
     while True:
         sock.sendto(bytes , (hedef_ip,hedef_port))
         sayac=sayac+1
-        print_colored("HUCUM EDILIR , gonderilen byte:%s", Colors.GREEN %(sayac))
+        print_colored(("HUCUM EDILIR , gonderilen byte:", Colors.GREEN)%(sayac))
         
