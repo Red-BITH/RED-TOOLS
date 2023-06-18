@@ -3,6 +3,8 @@ import os
 import socket
 import random
 import subprocess
+import signal
+
 os.system("apt install dmitry")
 os.system("apt install nmap")
 os.system("clear")
@@ -25,13 +27,12 @@ class Colors:
 def print_colored(text, color):
     print(color + text + Colors.ENDC)
 
-def durdur():
-    subprocess.call(["kill", "-INT", str(os.getpid())])
 
-# Kullanım örneği
-durdur()
 
-# Örnek kullanım
+
+def durdur(signal, frame):
+    print("Program kapatılıyor...")
+    os._exit(0)
 
 print('''
 
