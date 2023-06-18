@@ -32,7 +32,7 @@ def print_colored(text, color):
 
 
 def durdur(signal, frame):
-    print_colored("/n Program söndürülür...", Colors.YELLOW)
+    print_colored("Program söndürülür...", Colors.YELLOW)
     os._exit(0)
 
 # Ctrl+C sinyalini yakalamak için signal modülünü kullanıyoruz
@@ -45,14 +45,20 @@ from termcolor import colored
 
 # Birden fazla renkte metin yazdırma
 metin = colored('''
-  /$$$$$$        /$$              /$$$$$$        /$$      /$$
- /$$__  $$      | $$             /$$__  $$      | $$  /$ | $$
-| $$  \__/      | $$            | $$  \ $$      | $$ /$$$| $$
-|  $$$$$$       | $$            | $$  | $$      | $$/$$ $$ $$
- \____  $$      | $$            | $$  | $$      | $$$$_  $$$$
- /$$  \ $$      | $$            | $$  | $$      | $$$/ \  $$$
-|  $$$$$$/      | $$$$$$$$      |  $$$$$$/      | $$/   \  $$
- \______/       |________/       \______/       |__/     \__/
+
+ /$$$$$$$        /$$$$$$$$       /$$$$$$$ 
+| $$__  $$      | $$_____/      | $$__  $$
+| $$  \ $$      | $$            | $$  \ $$
+| $$$$$$$/      | $$$$$         | $$  | $$
+| $$__  $$      | $$__/         | $$  | $$
+| $$  \ $$      | $$            | $$  | $$
+| $$  | $$      | $$$$$$$$      | $$$$$$$/
+|__/  |__/      |________/      |_______/ 
+                                          
+                                          
+                                          
+
+
                                                                                                                                                                                                                                                                                                        
  ''', 'red') + colored('''
  
@@ -90,7 +96,7 @@ elif(secim == '2'):
 elif(secim == '3'):
     print_colored("""
     ###########################
-    #  T00L - By SLOWBITH     #
+    #  T00L - By RED_BITH     #
     #  ATTACK- DDOS           #
     #  HUCUMA HAZIRDIR        #
     ###########################
