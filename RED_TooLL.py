@@ -11,8 +11,7 @@ os.system("clear")
 
 
 
-def yeniden_baslat():
-    subprocess.call(["bash", "-c", "exec $0"])
+
 
 # Renkli çıktılar için ANSI kaçış dizilerini tanımlayalım
 class Colors:
@@ -115,7 +114,8 @@ else:
                      ----Çıxış etmək üçün :2.""", Colors.YELLOW)
     secim2 = input("Qərar ver:")
     if(secim2 == '1'):
-        yeniden_baslat()
+        durdur()
+        os.system("python RED_TooLL.py")
     elif(secim2 == '2'):
         durdur()
     else:
