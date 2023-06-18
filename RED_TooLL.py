@@ -72,7 +72,7 @@ print(metin)
                                                                                                                                                                                                              
 
 print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
-print_colored("|SLOW BITH TOOL|", Colors.RED)
+print_colored("|RED BITH TOOL|", Colors.RED)
 print_colored("| BY RED_BITH  |", Colors.GREEN)
 
 
