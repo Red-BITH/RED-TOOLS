@@ -111,7 +111,7 @@ elif(secim == '3'):
 else:
     print_colored("----Xəta baş verdi!", Colors.RED)
     print_colored("""----Yenidən başlatma üçün : 1.
-                     ----Çıxış etmək üçün :2.""", Colors.YELLOW)
+    ----Çıxış etmək üçün :2.""", Colors.YELLOW)
     secim2 = input("Qərar ver:")
     if(secim2 == '1'):
         durdur()
