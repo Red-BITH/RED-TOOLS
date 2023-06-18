@@ -32,7 +32,7 @@ def print_colored(text, color):
 
 
 def durdur(signal, frame):
-    print_colored("Program söndürülür...", Colors.YELLOW)
+    print_colored("/n Program söndürülür...", Colors.YELLOW)
     os._exit(0)
 
 # Ctrl+C sinyalini yakalamak için signal modülünü kullanıyoruz
