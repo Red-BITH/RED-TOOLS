@@ -5,8 +5,10 @@ import random
 import subprocess
 import signal
 from termcolor import colored
+os.system("apt install python3")
 os.system("apt install dmitry")
 os.system("apt install nmap")
+os.system("pip3 install  pyautogui")
 os.system("clear")
 
 
@@ -111,7 +113,8 @@ elif(secim == '3'):
         print_colored("HUCUM EDILIR , gonderilen byte:%s"%(sayac) , Colors.GREEN)
 
 elif(secim == '4'):
-    main = colored('''###############################
+    main = colored('''
+    ###############################
     #  ATTACK- BRUTE FORCE!       #
     #   BY RED-BITH               #
     # ASAGIDAKI QAYDALARA EMEL ET #
@@ -125,7 +128,7 @@ elif(secim == '4'):
     import tkinter as tk
     import pyautogui
 
-    os.system("pip3 install  pyautogui")
+    
 
 
 
