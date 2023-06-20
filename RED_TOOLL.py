@@ -112,59 +112,59 @@ elif(secim == '3'):
 
 elif(secim == '4'):
     main = colored("""
-###############################
-#  ATTACK- BRUTE FORCE!       #
-#   BY RED-BITH               #
-# ASAGIDAKI QAYDALARA EMEL ET #
-###############################
-  """, Colors.BLUE) + colored("""1. Bu sade brute-force  toolu sadece reqemli sifre qira biler!
-2.Bu sadece egitim meqsedlidir, Brute-force mentiqni qavramaginiz ucundur.""", Colors.YELLOW) + colored( """
-3. !!! Qeyri-etik olaraq YOXLAMAQ TOVSIYYE EDILMIR, sorumluluq QEBUL EDİLMİR !!!""", Colors.RED)
-print(main)
+    ###############################
+    #  ATTACK- BRUTE FORCE!       #
+    #   BY RED-BITH               #
+    # ASAGIDAKI QAYDALARA EMEL ET #
+    ###############################
+    """, Colors.BLUE) + colored("""1. Bu sade brute-force  toolu sadece reqemli sifre qira biler!
+    2.Bu sadece egitim meqsedlidir, Brute-force mentiqni qavramaginiz ucundur.""", Colors.YELLOW) + colored( """
+    3. !!! Qeyri-etik olaraq YOXLAMAQ TOVSIYYE EDILMIR, sorumluluq QEBUL EDİLMİR !!!""", Colors.RED)
+    print(main)
 
 
-import tkinter as tk
-import pyautogui
+    import tkinter as tk
+    import pyautogui
 
-os.system("pip3 install  pyautogui")
+    os.system("pip3 install  pyautogui")
 
 
 
-msg = "0123456789"
-pyautogui.FAILSAFE = False
+    msg = "0123456789"
+    pyautogui.FAILSAFE = False
 
-def start_brute_force(event=None):
-    for addim1 in msg:
-        for addim2 in msg:
-            for addim3 in msg:
-                for addim4 in msg:
-                    yoxlama = addim1 + addim2 + addim3 + addim4
-                    print(yoxlama)
-                    pyautogui.typewrite(yoxlama + '\n')
+    def start_brute_force(event=None):
+        for addim1 in msg:
+            for addim2 in msg:
+                for addim3 in msg:
+                    for addim4 in msg:
+                        yoxlama = addim1 + addim2 + addim3 + addim4
+                        print(yoxlama)
+                        pyautogui.typewrite(yoxlama + '\n')
 
-def stop_brute_force():
-    root.destroy()
+    def stop_brute_force():
+        root.destroy()
 
-def on_key_press(event):
-    if event.keysym == 'q' and event.state == 4:  # Ctrl+Q kombinasyonu
-        start_brute_force()
+    def on_key_press(event):
+        if event.keysym == 'q' and event.state == 4:  # Ctrl+Q kombinasyonu
+            start_brute_force()
 
-root = tk.Tk()
-root.geometry("400x300")  # Pencere boyutunu ayarlar
-root.configure(bg="yellow")  # Pencere arka plan rengini ayarlar
+    root = tk.Tk()
+    root.geometry("400x300")  # Pencere boyutunu ayarlar
+    root.configure(bg="yellow")  # Pencere arka plan rengini ayarlar
 
-label = tk.Label(root, text="Şifre Kırma", font=("Arial", 20), bg="yellow")
-label.pack(pady=20)
+    label = tk.Label(root, text="Şifre Kırma", font=("Arial", 20), bg="yellow")
+    label.pack(pady=20)
 
-start_button = tk.Button(root, text="Başlat", command=start_brute_force, font=("Arial", 18))
-start_button.pack(pady=10)
+    start_button = tk.Button(root, text="Başlat", command=start_brute_force, font=("Arial", 18))
+    start_button.pack(pady=10)
 
-stop_button = tk.Button(root, text="Durdur", command=stop_brute_force, font=("Arial", 18))
-stop_button.pack(pady=10)
+    stop_button = tk.Button(root, text="Durdur", command=stop_brute_force, font=("Arial", 18))
+    stop_button.pack(pady=10)
 
-root.bind("<Control-q>", on_key_press)  # Ctrl+Q kombinasyonuna bağlı olarak on_key_press fonksiyonunu çağırır
+    root.bind("<Control-q>", on_key_press)  # Ctrl+Q kombinasyonuna bağlı olarak on_key_press fonksiyonunu çağırır
 
-root.mainloop()
+    root.mainloop()
 
 
 else:
