@@ -111,15 +111,16 @@ elif(secim == '3'):
         print_colored("HUCUM EDILIR , gonderilen byte:%s"%(sayac) , Colors.GREEN)
 
 elif(secim == '4'):
-    main = colored("""
-    ###############################
+    main = colored(""" ###############################
     #  ATTACK- BRUTE FORCE!       #
     #   BY RED-BITH               #
     # ASAGIDAKI QAYDALARA EMEL ET #
     ###############################
-    """, Colors.BLUE) + colored("""1. Bu sade brute-force  toolu sadece reqemli sifre qira biler!
+    """, Colors.GREEN) + colored("""1. Bu sade brute-force  toolu sadece reqemli sifre qira biler!
     2.Bu sadece egitim meqsedlidir, Brute-force mentiqni qavramaginiz ucundur.""", Colors.YELLOW) + colored( """
     3. !!! Qeyri-etik olaraq YOXLAMAQ TOVSIYYE EDILMIR, sorumluluq QEBUL EDİLMİR !!!""", Colors.RED)
+   
+    
     print(main)
 
 
