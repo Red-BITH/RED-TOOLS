@@ -1,3 +1,5 @@
+import tkinter as tk
+import pyautogui
 
 import os
 import socket
@@ -8,7 +10,7 @@ from termcolor import colored
 os.system("apt install python3")
 os.system("apt install dmitry")
 os.system("apt install nmap")
-os.system("pip3 install  pyautogui")
+os.system("pip install  pyautogui")
 os.system("clear")
 
 
@@ -125,9 +127,7 @@ elif(secim == '4'):
     print(main)
 
 
-    import tkinter as tk
-    import pyautogui
-
+   
     
 
 
