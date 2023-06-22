@@ -1,5 +1,3 @@
-import tkinter as tk
-
 
 import os
 import socket
@@ -12,7 +10,6 @@ os.system("apt install dmitry")
 os.system("apt install nmap")
 os.system("python -m pip install --upgrade pip")
 
-import pyautogui
 
 os.system("clear")
 
