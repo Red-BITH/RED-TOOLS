@@ -88,7 +88,7 @@ print_colored("| BY RED_BITH  |", Colors.GREEN)
 print_colored("""1.Hedef site haqqinda
 2.port scanner
 3.DDOS hucum
-4.Brute-Force(reqem)
+4.Ip addres Melumat
   """, Colors.YELLOW)
 secim = input("Nov sec:")
 
@@ -121,56 +121,52 @@ elif(secim == '3'):
 elif(secim == '4'):
     main = colored('''
     ###############################
-    #  ATTACK- BRUTE FORCE!       #
+    #  ATTACK- Ip melumat         #
     #   BY RED-BITH               #
     # ASAGIDAKI QAYDALARA EMEL ET #
     ###############################
-    ''', 'green') + colored("""1. Bu sade brute-force  toolu sadece reqemli sifre qira biler!
-    2.Bu sadece egitim meqsedlidir, Brute-force mentiqni qavramaginiz ucundur.""", 'yellow') + colored( """
-    3. !!! Qeyri-etik olaraq YOXLAMAQ TOVSIYYE EDILMIR, sorumluluq QEBUL EDİLMİR !!!""", 'red')
-    print(main)
+    ''', 'green')
+    import json
+from urllib.request import urlopen
+from tabulate import tabulate
 
 
-   
-    
+class Colors:
+    HEADER = '\033[95m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    ENDC = '\033[0m'
+
+def print_colored(text, color):
+    print(color + text + Colors.ENDC)
 
 
+url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
+response = urlopen(url)
+data = json.load(response)
 
-    msg = "0123456789"
-    pyautogui.FAILSAFE = False
+table_data = [
+    ["IP", data["ip"]],
+    ["City", data["city"]],
+    ["Region", data["region"]],
+    ["Country", data["country"]],
+    ["Postal Code", data["postal"]],
+    ["Organization", data["org"]],
+    ["ASN", data.get("asn", ["N/A"])[0]],
+    ["IP Range", data.get("ip_range", "N/A")],
+    ["Local Time", data.get("timezone", "N/A")],
+    ["Timezone", data.get("timezone", "N/A")],
+    ["Coordinates", data.get("loc", "N/A")],
+    ["Privacy Detection", data.get("privacy", "N/A")]
+, Colors.YELLOW]
 
-    def start_brute_force(event=None):
-        for addim1 in msg:
-            for addim2 in msg:
-                for addim3 in msg:
-                    for addim4 in msg:
-                        yoxlama = addim1 + addim2 + addim3 + addim4
-                        print(yoxlama)
-                        pyautogui.typewrite(yoxlama + '\n')
+table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
+print_colored(table, Colors.YELLOW)
 
-    def stop_brute_force():
-        root.destroy()
+print_colored("DAHA COX MELUMAT ISTEYIRSINIZ?", Colors.BLUE)
 
-    def on_key_press(event):
-        if event.keysym == 'q' and event.state == 4:  # Ctrl+Q kombinasyonu
-            start_brute_force()
-
-    root = tk.Tk()
-    root.geometry("400x300")  # Pencere boyutunu ayarlar
-    root.configure(bg="yellow")  # Pencere arka plan rengini ayarlar
-
-    label = tk.Label(root, text="Şifre Kırma", font=("Arial", 20), bg="yellow")
-    label.pack(pady=20)
-
-    start_button = tk.Button(root, text="Başlat", command=start_brute_force, font=("Arial", 18))
-    start_button.pack(pady=10)
-
-    stop_button = tk.Button(root, text="Durdur", command=stop_brute_force, font=("Arial", 18))
-    stop_button.pack(pady=10)
-
-    root.bind("<Control-q>", on_key_press)  # Ctrl+Q kombinasyonuna bağlı olarak on_key_press fonksiyonunu çağırır
-
-    root.mainloop()
 
 
 else:
