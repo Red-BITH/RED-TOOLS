@@ -127,45 +127,45 @@ elif(secim == '4'):
     ###############################
     ''', 'green')
     import json
-from urllib.request import urlopen
-from tabulate import tabulate
+    from urllib.request import urlopen
+    from tabulate import tabulate
 
 
-class Colors:
-    HEADER = '\033[95m'
-    BLUE = '\033[94m'
-    GREEN = '\033[92m'
-    YELLOW = '\033[93m'
-    RED = '\033[91m'
-    ENDC = '\033[0m'
+    class Colors:
+        HEADER = '\033[95m'
+        BLUE = '\033[94m'
+        GREEN = '\033[92m'
+        YELLOW = '\033[93m'
+        RED = '\033[91m'
+        ENDC = '\033[0m'
+    
+    def print_colored(text, color):
+        print(color + text + Colors.ENDC)
 
-def print_colored(text, color):
-    print(color + text + Colors.ENDC)
 
+    url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
+    response = urlopen(url)
+    data = json.load(response)
 
-url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
-response = urlopen(url)
-data = json.load(response)
+    table_data = [
+        ["IP", data["ip"]],
+        ["City", data["city"]],
+        ["Region", data["region"]],
+        ["Country", data["country"]],
+        ["Postal Code", data["postal"]],
+        ["Organization", data["org"]],
+        ["ASN", data.get("asn", ["N/A"])[0]],
+        ["IP Range", data.get("ip_range", "N/A")],
+        ["Local Time", data.get("timezone", "N/A")],
+        ["Timezone", data.get("timezone", "N/A")],
+        ["Coordinates", data.get("loc", "N/A")],
+        ["Privacy Detection", data.get("privacy", "N/A")]
+    , Colors.YELLOW]
 
-table_data = [
-    ["IP", data["ip"]],
-    ["City", data["city"]],
-    ["Region", data["region"]],
-    ["Country", data["country"]],
-    ["Postal Code", data["postal"]],
-    ["Organization", data["org"]],
-    ["ASN", data.get("asn", ["N/A"])[0]],
-    ["IP Range", data.get("ip_range", "N/A")],
-    ["Local Time", data.get("timezone", "N/A")],
-    ["Timezone", data.get("timezone", "N/A")],
-    ["Coordinates", data.get("loc", "N/A")],
-    ["Privacy Detection", data.get("privacy", "N/A")]
-, Colors.YELLOW]
+    table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
+    print_colored(table, Colors.YELLOW)
 
-table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
-print_colored(table, Colors.YELLOW)
-
-print_colored("DAHA COX MELUMAT ISTEYIRSINIZ?", Colors.BLUE)
+    print_colored("DAHA COX MELUMAT ISTEYIRSINIZ?", Colors.BLUE)
 
 
 
