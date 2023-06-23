@@ -138,7 +138,7 @@ elif(secim == '4'):
     def print_colored(text, color):
         print(color + text + Colors.ENDC)
     print_colored("OZ ip niz haqqinda ? yaxud qarsi teref?", Colors.BLUE)
-        secim3 = input_colored("SECIMINI ET--1-Oz ip; 2-qarsi ip:", Colors.RED)
+        secim3 = input("SECIMINI ET--1-Oz ip; 2-qarsi ip:")
         if(secim3 == '1' ):
             print_colored(''' 
             def get_own_ip_info():
