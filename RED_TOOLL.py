@@ -13,6 +13,8 @@ os.system("apt install python3")
 os.system("apt install dmitry")
 os.system("apt install nmap")
 os.system("python -m pip install --upgrade pip")
+os.system("python -m pip install --upgrade termcolor")
+
 
 os.system("clear")
 
