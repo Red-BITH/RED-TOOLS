@@ -44,7 +44,7 @@ signal.signal(signal.SIGINT, durdur)
 # ...
 
 # Birden fazla renkte metin yazdırma
-metin = colored('''
+metin = ('''\033[91m
  /$$$$$$$        /$$$$$$$$       /$$$$$$$ 
 | $$__  $$      | $$_____/      | $$__  $$
 | $$  \ $$      | $$            | $$  \ $$
@@ -55,7 +55,7 @@ metin = colored('''
 |__/  |__/      |________/      |_______/ 
                                           
                                           
-''', Colors.RED) + colored('''
+\033[0m''') + ('''\033[92m
  
  /$$$$$$$$        /$$$$$$         /$$$$$$        /$$            
 |__  $$__/       /$$__  $$       /$$__  $$      | $$            
@@ -65,7 +65,7 @@ metin = colored('''
    | $$         | $$  | $$      | $$  | $$      | $$            
    | $$         |  $$$$$$/      |  $$$$$$/      | $$$$$$$$      
    |__/          \______/        \______/       |________/  
- ''', Colors.GREEN)
+\033[92m''')
 print(metin)
 
 print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
@@ -106,7 +106,7 @@ elif secim == '3':
     while True:
         sock.sendto(bytes, (hedef_ip, hedef_port))
         sayac += 1
-        print_colored("HUCUM EDILIR , gonderilen byte:%s" % (sayac), Colors.GREEN)
+        print("\033[92mHUCUM EDILIR , gonderilen byte:%s\033[0m" % (sayac))
 
 elif secim == '4':
     print_colored("""
