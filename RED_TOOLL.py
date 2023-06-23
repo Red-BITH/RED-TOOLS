@@ -53,7 +53,7 @@ metin = colored('''
 |__/  |__/      |________/      |_______/ 
                                           
                                           
-''', 'red') + colored('''
+''', Colors.RED) + colored('''
  
  /$$$$$$$$        /$$$$$$         /$$$$$$        /$$            
 |__  $$__/       /$$__  $$       /$$__  $$      | $$            
@@ -63,7 +63,7 @@ metin = colored('''
    | $$         | $$  | $$      | $$  | $$      | $$            
    | $$         |  $$$$$$/      |  $$$$$$/      | $$$$$$$$      
    |__/          \______/        \______/       |________/  
- ''', 'green')
+ ''', Colors.GREEN)
 print(metin)
 
 print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
@@ -113,7 +113,7 @@ elif secim == '4':
     #   BY RED-BITH               #
     # ASAGIDAKI QAYDALARA EMEL ET #
     ###############################
-    """, 'green')
+    """, Colors.GREEN)
     
     print_colored("OZ ip niz haqqinda ? yaxud qarsi teref?", Colors.BLUE)
     secim3 = input("SECIMINI ET--1-Oz ip; 2-qarsi ip:")
