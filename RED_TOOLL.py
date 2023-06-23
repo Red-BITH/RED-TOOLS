@@ -137,32 +137,46 @@ elif(secim == '4'):
     
     def print_colored(text, color):
         print(color + text + Colors.ENDC)
+    print_colored("OZ ip niz haqqinda ? yaxud qarsi teref?", Colors.BLUE)
+        secim3 = input_colored("SECIMINI ET--1-Oz ip; 2-qarsi ip:", Colors.RED)
+        if(secim3 == '1' ):
+            print_colored(''' 
+            def get_own_ip_info():
+                url = "https://ipinfo.io/json"
+                response = requests.get(url)
+                data = response.json()
+                return data
 
+            own_ip_info = get_own_ip_info()
+            print(json.dumps(own_ip_info, indent=4))
 
-    url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
-    response = urlopen(url)
-    data = json.load(response)
+            '''):", Colors.GREEN)
 
-    table_data = [
-        ["IP", data["ip"]],
-        ["City", data["city"]],
-        ["Region", data["region"]],
-        ["Country", data["country"]],
-        ["Postal Code", data["postal"]],
-        ["Organization", data["org"]],
-        ["ASN", data.get("asn", ["N/A"])[0]],
-        ["IP Range", data.get("ip_range", "N/A")],
-        ["Local Time", data.get("timezone", "N/A")],
-        ["Timezone", data.get("timezone", "N/A")],
-        ["Coordinates", data.get("loc", "N/A")],
-        ["Privacy Detection", data.get("privacy", "N/A")]
-    , Colors.YELLOW]
+        elif(secim3 == '2'): 
+            url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
+            response = urlopen(url)
+            data = json.load(response)
 
-    table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
-    print_colored(table, Colors.YELLOW)
+            table_data = [
+            ["IP", data["ip"]],
+            ["City", data["city"]],
+            ["Region", data["region"]],
+            ["Country", data["country"]],
+            ["Postal Code", data["postal"]],
+            ["Organization", data["org"]],
+            ["ASN", data.get("asn", ["N/A"])[0]],
+            ["IP Range", data.get("ip_range", "N/A")],
+            ["Local Time", data.get("timezone", "N/A")],
+            ["Timezone", data.get("timezone", "N/A")],
+            ["Coordinates", data.get("loc", "N/A")],
+            ["Privacy Detection", data.get("privacy", "N/A")]
+            , Colors.YELLOW]
 
-    print_colored("DAHA COX MELUMAT ISTEYIRSINIZ?", Colors.BLUE)
+            table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
+            print_colored(table, Colors.BLUE)
 
+    
+        
 
 
 else:
