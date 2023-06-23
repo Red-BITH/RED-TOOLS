@@ -137,20 +137,18 @@ elif(secim == '4'):
     
     def print_colored(text, color):
         print(color + text + Colors.ENDC)
-    print_colored("OZ ip niz haqqinda ? yaxud qarsi teref?", Colors.BLUE)
+        print_colored("OZ ip niz haqqinda ? yaxud qarsi teref?", Colors.BLUE)
         secim3 = input("SECIMINI ET--1-Oz ip; 2-qarsi ip:")
         if(secim3 == '1' ):
-            print_colored(''' 
             def get_own_ip_info():
                 url = "https://ipinfo.io/json"
                 response = requests.get(url)
                 data = response.json()
-                return data
+            return data
 
             own_ip_info = get_own_ip_info()
-            print(json.dumps(own_ip_info, indent=4))
+            print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
-            '''):", Colors.GREEN)
 
         elif(secim3 == '2'): 
             url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
