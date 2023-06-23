@@ -137,7 +137,7 @@ elif secim == '4':
 
         table_data = [
             ["IP", data["ip"]],
-            ["City", data["city"]],
+            ["city", data["city"]],
             ["Region", data["region"]],
             ["Country", data["country"]],
             ["Postal Code", data["postal"]],
