@@ -7,15 +7,8 @@ import random
 import subprocess
 import signal
 
-os.system("pip install requests")
+
 import requests
-os.system("pip3 installl termcolor")
-os.system("pip install tabulate")
-os.system("apt install python3")
-os.system("apt install dmitry")
-os.system("apt install nmap")
-os.system("python -m pip install --upgrade pip")
-os.system("python -m pip install --upgrade termcolor")
 from tabulate import tabulate
 from termcolor import colored
 print("""
@@ -27,6 +20,19 @@ YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.
 \033[0m""")
 r = input("daxil et:")
 if(r == "1"):
+    os.system("pip install requests")
+    import requests
+    os.system("pip3 installl termcolor")
+    os.system("pip install tabulate")
+    os.system("apt install python3")
+    os.system("apt install dmitry")
+    os.system("apt install nmap")
+    os.system("python -m pip install --upgrade pip")
+    os.system("python -m pip install --upgrade termcolor")
+    
+    
+    
+    
     os.system("clear")
    
 elif(r == "2"):
@@ -35,6 +41,16 @@ elif(r == "2"):
     os.system("pkg install openssl")
     os.system("pip install termcolor")
     os.system("pip install requests")
+    
+    os.system("pip install requests")
+    import requests
+    os.system("pip3 installl termcolor")
+    os.system("pip install tabulate")
+    os.system("apt install python3")
+    os.system("apt install dmitry")
+    os.system("apt install nmap")
+    os.system("python -m pip install --upgrade pip")
+    os.system("python -m pip install --upgrade termcolor")
     os.system("clear")
 
 # Renkli çıktılar için ANSI kaçış dizilerini tanımlayalım
