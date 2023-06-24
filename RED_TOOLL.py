@@ -26,7 +26,7 @@ YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.
 r = input("daxil et:")
 if(r == "1"):
     os.system("clear")
-    continue
+   
 elif(r == "2"):
     os.system("pkg update")
     os.system("apt-get update&&upgrade")
