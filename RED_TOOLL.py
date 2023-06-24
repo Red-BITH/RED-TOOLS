@@ -6,7 +6,7 @@ import socket
 import random
 import subprocess
 import signal
-from termcolor import colored
+
 import requests
 os.system("pip3 installl termcolor")
 os.system("pip install tabulate")
@@ -16,6 +16,7 @@ os.system("apt install nmap")
 os.system("python -m pip install --upgrade pip")
 os.system("python -m pip install --upgrade termcolor")
 from tabulate import tabulate
+from termcolor import colored
 print("""
 \033[91mLİNUX?yoxsaTERMUX?---hansından bağlanırsınız?
 1---linux
