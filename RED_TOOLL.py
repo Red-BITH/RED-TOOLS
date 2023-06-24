@@ -8,6 +8,7 @@ import subprocess
 import signal
 from termcolor import colored
 import requests
+os.system("pip installl termcolor")
 os.system("pip install tabulate")
 os.system("apt install python3")
 os.system("apt install dmitry")
