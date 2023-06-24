@@ -20,7 +20,7 @@ if(r == "1"):
     os.system("pip install requests")
     import requests
     os.system("pip3 installl termcolor")
-    os.system("pip install tabulate")
+    os.system("pip3 install tabulate")
     os.system("apt install python3")
     os.system("apt install dmitry")
     os.system("apt install nmap")
@@ -43,8 +43,7 @@ elif(r == "2"):
     
     os.system("pip install requests")
     import requests
-    from tabulate import tabulate
-    from termcolor import colored
+    
     os.system("pip3 installl termcolor")
     os.system("pip install tabulate")
     os.system("apt install python3")
@@ -52,6 +51,8 @@ elif(r == "2"):
     os.system("apt install nmap")
     os.system("python -m pip install --upgrade pip")
     os.system("python -m pip install --upgrade termcolor")
+    from tabulate import tabulate
+    from termcolor import colored
     os.system("clear")
 
 # Renkli çıktılar için ANSI kaçış dizilerini tanımlayalım
