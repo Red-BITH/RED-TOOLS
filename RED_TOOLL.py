@@ -7,6 +7,7 @@ import random
 import subprocess
 import signal
 
+os.system("pip install requests")
 import requests
 os.system("pip3 installl termcolor")
 os.system("pip install tabulate")
