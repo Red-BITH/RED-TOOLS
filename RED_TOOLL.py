@@ -1,6 +1,6 @@
 import json
 from urllib.request import urlopen
-from tabulate import tabulate
+
 import os
 import socket
 import random
@@ -8,13 +8,13 @@ import subprocess
 import signal
 from termcolor import colored
 import requests
-
+os.system("pip install tabulate")
 os.system("apt install python3")
 os.system("apt install dmitry")
 os.system("apt install nmap")
 os.system("python -m pip install --upgrade pip")
 os.system("python -m pip install --upgrade termcolor")
-
+from tabulate import tabulate
 
 os.system("clear")
 
