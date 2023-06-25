@@ -5,17 +5,22 @@ import socket
 import random
 import subprocess
 import signal
+from termcolor import colored
 os.system("clear")
 
 
-print("""
-\033[91mLİNUX?yoxsaTERMUX?---hansından bağlanırsınız?
-1---linux
-2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.
-3---Yükləmələr tamamlanıb.
-BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR!
-YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.
-\033[0m""")
+print_colored("""
+##############################################################
+# BOOT v1.0.2 #                                              #
+###############                                              #  
+# LİNUX?yoxsaTERMUX?---hansından bağlanırsınız?              #
+# 1---linux                                                  #
+# 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.    #
+# 3---Yükləmələr tamamlanıb.                                 #
+# BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR! #
+# YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.                 #
+##############################################################
+""", Colors.BLUE)
 r = input("daxil et:")
 if(r == "1"):
     os.system("pip install requests")
