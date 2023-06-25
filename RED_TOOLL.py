@@ -15,8 +15,7 @@ print("""\033[94m
 ###############                                              #  
 # LİNUX?yoxsaTERMUX?---hansından bağlanırsınız?              #
 # 1---linux                                                  #
-# 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.    #
-# 3---Yükləmələr tamamlanıb.                                 #
+# 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.    #                                 
 # BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR! #
 # YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.                 #
 ##############################################################
