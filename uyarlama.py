@@ -1,3 +1,4 @@
+os.system("clear")
 import json
 from urllib.request import urlopen
 
@@ -9,7 +10,7 @@ import signal
 import requests
 from tabulate import tabulate
 from termcolor import colored
-os.system("clear")
+
 
 
 class Colors:
