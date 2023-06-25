@@ -7,6 +7,8 @@ import random
 import subprocess
 import signal
 import requests
+from tabulate import tabulate
+from termcolor import colored
 
 
 
