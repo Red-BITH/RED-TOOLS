@@ -126,8 +126,8 @@ elif secim == '4':
         print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
     elif secim3 == '2':
-        url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
-        response = urlopen(url)
+        url1 = "https://ipinfo.io/" + input("İP DAXİL ET: ")
+        response = urlopen(url1)
         data = json.load(response)
 
         table_data = [
