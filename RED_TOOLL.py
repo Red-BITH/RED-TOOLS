@@ -1,6 +1,5 @@
 import json
 from urllib.request import urlopen
-
 import os
 import socket
 import random
@@ -56,6 +55,7 @@ elif(r == "2"):
     from termcolor import colored
     os.system("clear")
 elif(r == 3):
+    import os
     os.system("clear")
     os.system("python uyarlama.py")
     
