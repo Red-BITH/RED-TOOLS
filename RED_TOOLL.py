@@ -5,6 +5,7 @@ import socket
 import random
 import subprocess
 import signal
+os.system("clear")
 
 
 print("""
