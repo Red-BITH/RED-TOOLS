@@ -77,7 +77,7 @@ secim = input("Nov sec:")
 
 if secim == '1':
     hedefsite = input('Hedef site adresi')
-    os.system('dmitry ' + hedefsite)
+    os.system(\033[92m'dmitry ' + hedefsite\033[92m)
 
 elif secim == '2':
     hedef = input('Sayt adresi ve ya ip daxit et:')
