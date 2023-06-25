@@ -12,6 +12,7 @@ print("""
 \033[91mLİNUX?yoxsaTERMUX?---hansından bağlanırsınız?
 1---linux
 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.
+3---Yükləmələr tamamlanıb.
 BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR!
 YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.
 \033[0m""")
@@ -54,7 +55,8 @@ elif(r == "2"):
     from tabulate import tabulate
     from termcolor import colored
     os.system("clear")
-
+elif(r == 3):
+    
 # Renkli çıktılar için ANSI kaçış dizilerini tanımlayalım
 class Colors:
     HEADER = '\033[95m'
