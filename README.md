@@ -5,8 +5,27 @@ toolu çox dəyişdirmş və yeni alətlər əlavə etmişəm.
 
 Başqa toollar üçün və yaxud yardım üçün Discord: ATmanı/UNİFORMPİNE#9307
 
-`Tool public olaraq paylaşılmışdır və sosial platformalarda nsanlar paylaşa bilərlər. Lakin proyekti özünün malı kimi lans edənlər və yaxud öz kodları olduğunu iddia edənlərə
+`Tool public olaraq paylaşılmışdır və sosial platformalarda nsanlar paylaşa bilərlər. Lakin proyekti özünün malı kimi lans edənlər
+və yaxud öz kodları olduğunu iddia edənlərə
 İNANMAYIN. Bu şəxslər çox təəssüfki tiktok və yaxud başqa platformada olan pul ilə "HACKER" xidməti göstərənlərdir :D`
+
+`QURULMA və İSTİFADƏ QAYDASI:` 
+1.Toolun içində hər şey izah olunub, linuxunuzda və yaxud termuxda python3 ün qurulu olduğundan əmin olun.
+
+2.terminalı açın və `git clone https://github.com/Red-BITH/RED-TOOLS ` yazın.
+
+3.sonra `cd RED-TOOLS`
+
+4.Terminalda toolun  başqa fayllarına girməyin sadəcə `python RED_TOOLL.py` yazmağınız kifayətdir.
+
+5.`BOOT` menusunda boot versiyasının v1.0.2 olduğundan əmin olun və doğru seçimi edin, əyər komputerdə kali linux və 
+başqasından bağlanırsınızsa `1`i seçin.`Termux`dan istifadə edənlər 2-i seçin.Olmayan fileların endirilməsi zaman ala bilər.
+Ekranda olan`error və xəta` lardan qorxmayın və gözləyin. TOOL açılacaq.
+`İSTİFADƏ QAYDALARINI OXUDUĞUNUZ HESAB EDİLİR VƏ YANLIŞ BİLGİLƏR GİRƏRƏK XƏTA ALMAĞINIZ HAQQINDA SORUMLULUQ QƏBUL EDİLMİR`
+
+6.`FİLE` da olan digər dosyaları qarışdırmayın!
+
+
 
 
 `TR ----`Herkese merhaba. Bu proje, kiber dünyada yaptığım ilk araç projesidir ve İstiklal_tea-m topluluğunun değerli bir üyesi 
