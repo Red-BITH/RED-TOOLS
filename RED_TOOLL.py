@@ -56,6 +56,7 @@ elif(r == "2"):
     from termcolor import colored
     os.system("clear")
 elif(r == 3):
+    os.system("clear")
     os.system("python uyarlama.py")
     
 # Renkli çıktılar için ANSI kaçış dizilerini tanımlayalım
