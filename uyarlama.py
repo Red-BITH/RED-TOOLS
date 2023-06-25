@@ -9,7 +9,7 @@ import signal
 import requests
 from tabulate import tabulate
 from termcolor import colored
-
+os.system("clear")
 
 
 class Colors:
