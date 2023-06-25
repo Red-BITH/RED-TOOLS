@@ -1,3 +1,14 @@
+import json
+from urllib.request import urlopen
+
+import os
+import socket
+import random
+import subprocess
+import signal
+
+
+
 class Colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
