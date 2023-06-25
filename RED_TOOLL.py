@@ -9,7 +9,7 @@ from termcolor import colored
 os.system("clear")
 
 
-print_colored("""
+print("""\033[94m
 ##############################################################
 # BOOT v1.0.2 #                                              #
 ###############                                              #  
@@ -20,7 +20,7 @@ print_colored("""
 # BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR! #
 # YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.                 #
 ##############################################################
-""", Colors.BLUE)
+\033[0m""")
 r = input("daxil et:")
 if(r == "1"):
     os.system("pip install requests")
