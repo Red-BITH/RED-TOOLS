@@ -28,10 +28,6 @@ if(r == "1"):
     os.system("python -m pip install --upgrade termcolor")
     from tabulate import tabulate
     from termcolor import colored
-    
-    
-    
-    
     os.system("clear")
    
 elif(r == "2"):
