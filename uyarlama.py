@@ -8,6 +8,8 @@ import random
 import subprocess
 import signal
 import requests
+
+os.system("pip install tabulate")
 from tabulate import tabulate
 from termcolor import colored
 os.system("clear")
