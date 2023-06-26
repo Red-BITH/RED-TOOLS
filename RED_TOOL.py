@@ -202,7 +202,7 @@ elif(secim == "5"):
     xeyr -- 2""")
     y = input("Daxil et:")
     if(y == "1"):
-        os.system("python3 system.py")
+        os.system("python3 str.py")
     
     
 
