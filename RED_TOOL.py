@@ -197,8 +197,8 @@ elif secim == '4':
         print_colored(table, Colors.BLUE)
 
 elif(secim == "5"):
-    os.system("clear")
     os.system("cd TOXUNMA")
+    print("hazırdır  " 
     os.system("python system.py")
     
 
