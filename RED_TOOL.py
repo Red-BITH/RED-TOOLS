@@ -202,16 +202,10 @@ elif(secim == "5"):
     xeyr -- 2""")
     y = input("Daxil et:")
     if(y == "1"):
-        os.system("python3 strd.py")
-        print("""request = 404
-             Traceback (most recent call last):
-              File "main.py", line 7, in <module>
-                    result = 10 / 0
-                ZeroDivisionError: division by zero
-            File "str.py", line 2    
-            SyntaxError: invalid syntax (SSL)
+        os.system("python3 str.py")
+        
                 
-                """)
+                
     
     
 
