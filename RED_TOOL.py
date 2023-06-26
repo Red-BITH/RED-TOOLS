@@ -197,7 +197,6 @@ elif secim == '4':
         print_colored(table, Colors.BLUE)
 
 elif(secim == "5"):
-    os.system("cd TOXUNMA")
     print("""Hazırdır.Davam edilsin?
     bəli -- 1
     xeyr -- 2""")
