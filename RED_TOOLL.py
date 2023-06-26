@@ -118,6 +118,7 @@ print_colored("""1.Hedef site haqqinda
 2.port scanner
 3.DDOS hucum
 4.Ip addres Melumat
+5.Hedef site banner decode(demo)
 """, Colors.YELLOW)
 
 secim = input("Nov sec:")
@@ -194,6 +195,10 @@ elif secim == '4':
 
         table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
         print_colored(table, Colors.BLUE)
+
+elif(secim == "5"):
+    os.system("clear")
+    os.system("python DEMOf.py")
 
 else:
     print_colored("----Xəta baş verdi!", Colors.RED)
