@@ -198,7 +198,7 @@ elif secim == '4':
 
 elif(secim == "5"):
     os.system("cd TOXUNMA")
-    print("hazırdır  " 
+    print("hazırdır  ")
     os.system("python system.py")
     
 
