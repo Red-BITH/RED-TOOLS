@@ -198,8 +198,10 @@ elif secim == '4':
 
 elif(secim == "5"):
     os.system("cd TOXUNMA")
-    print("hazırdır  ")
-    os.system("python system.py")
+    print("""Hazırdır.Davam edilsin?
+    bəli -- 1
+    xeyr -- 2""")
+    
     
 
 else:
