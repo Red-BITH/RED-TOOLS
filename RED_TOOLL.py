@@ -198,7 +198,8 @@ elif secim == '4':
 
 elif(secim == "5"):
     os.system("clear")
-    os.system("python DEMOf.py")
+    os.system("cd TOXUNMA")
+    os.system("python system.py")
 
 else:
     print_colored("----Xəta baş verdi!", Colors.RED)
