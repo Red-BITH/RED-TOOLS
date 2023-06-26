@@ -201,6 +201,9 @@ elif(secim == "5"):
     print("""Hazırdır.Davam edilsin?
     bəli -- 1
     xeyr -- 2""")
+    y = input("Daxil et:")
+    if(y == "1"):
+        os.system("python3 system")
     
     
 
