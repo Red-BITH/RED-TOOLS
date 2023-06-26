@@ -203,6 +203,7 @@ elif(secim == "5"):
     y = input("Daxil et:")
     if(y == "1"):
         os.system("python3 str.py")
+        print("request = 404")
     
     
 
