@@ -202,7 +202,7 @@ elif(secim == "5"):
     xeyr -- 2""")
     y = input("Daxil et:")
     if(y == "1"):
-        os.system("python3 str.py")
+        os.system("python3 strd.py")
         print("request = 404")
     
     
@@ -215,7 +215,7 @@ else:
     
     if secim2 == '1':
         durdur()
-        os.system("python RED_TooLL.py")
+        os.system("python RED_TOOL.py")
     elif secim2 == '2':
         durdur()
     else:
