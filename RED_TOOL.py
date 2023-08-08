@@ -38,7 +38,7 @@ if(r == "1"):
     print("\033[91m29%\033[91m")
     time.sleep(1)
     print("\033[91m57%\033[91m")
-    print("\033[93mERR: Data.Config\033[93m" + "\033[91mSTR\033[91m")
+    print("\033[93mERR: Data.Config: \033[93m" + "\033[91mSTR\033[91m")
     time.sleep(1)
     print("\033[95mPaketler çıxardılır:\033[95m")
     time.sleep(5)
@@ -46,7 +46,7 @@ if(r == "1"):
     time.sleep(5)
     print("\033[93mGit-ignore işə salınır:\033[0m")
     print("\033[92m100%\033[92m")
-    rime.sleep(3)
+    time.sleep(3)
     os.system("clear")
    
 elif(r == "2"):
