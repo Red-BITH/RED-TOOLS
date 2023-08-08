@@ -46,6 +46,7 @@ if(r == "1"):
     time.sleep(5)
     print("\033[93mGit-ignore işə salınır:\033[0m")
     print("\033[92m100%\033[92m")
+    rime.sleep(3)
     os.system("clear")
    
 elif(r == "2"):
