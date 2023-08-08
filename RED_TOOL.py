@@ -5,7 +5,6 @@ import socket
 import random
 import subprocess
 import signal
-from termcolor import colored
 os.system("clear")
 
 
