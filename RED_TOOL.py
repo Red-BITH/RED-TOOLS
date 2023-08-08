@@ -8,13 +8,13 @@ import signal
 os.system("clear")
 
 
+print("""\033[31mBOOT: 1.0.4v\033[0m""")
 print("""\033[94m
-##############################################################
-# BOOT v1.0.2 #                                              #
-###############                                              #  
+##############################################################                                                    
 # LİNUX?yoxsaTERMUX?---hansından bağlanırsınız?              #
 # 1---linux                                                  #
-# 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.    #                                 
+# 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.    #
+# 3---əgər ilk dəfə girmirsinizsə 3 vəya başqa birşey yazın. #                               
 # BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR! #
 # YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.                 #
 ##############################################################
