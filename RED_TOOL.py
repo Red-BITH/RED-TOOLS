@@ -8,7 +8,7 @@ import signal
 os.system("clear")
 
 
-print("""\033[31mBOOT: 1.0.4v\033[0m""")
+print("""\033[31mBOOT: v1.0.4\033[0m""")
 print("""\033[94m
 ##############################################################                                                    
 # LİNUX?yoxsaTERMUX?---hansından bağlanırsınız?              #
