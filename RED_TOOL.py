@@ -108,7 +108,6 @@ elif(r == 3):
     os.system("python uyarlama.py")
     
     
-# Renkli çıktılar için ANSI kaçış dizilerini tanımlayalım
 class Colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
@@ -117,7 +116,7 @@ class Colors:
     RED = '\033[91m'
     ENDC = '\033[0m'
 
-# Renkli bir şekilde çıktı vermek için kullanabileceğiniz bir fonksiyon
+
 def print_colored(text, color):
     print(color + text + Colors.ENDC)
 
@@ -127,13 +126,10 @@ def durdur(signal, frame):
     os._exit(0)
 
 
-# Ctrl+C sinyalini yakalamak için signal modülünü kullanıyoruz
+
 signal.signal(signal.SIGINT, durdur)
 
-# Programınızın geri kalan kodu
-# ...
 
-# Birden fazla renkte metin yazdırma
 metin = ('''\033[91m
  /$$$$$$$        /$$$$$$$$       /$$$$$$$ 
 | $$__  $$      | $$_____/      | $$__  $$
