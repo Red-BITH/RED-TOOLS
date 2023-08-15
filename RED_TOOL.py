@@ -158,7 +158,7 @@ print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
 print_colored("|RED BITH TOOL|", Colors.RED)
 print_colored("| BY RED_BITH  |", Colors.GREEN)
 
-print_colored("""1.Hedef site haqqinda
+print_colored("""1.Hedef site haqqinda(Termuxda işləməyə bilər.)
 2.port scanner
 3.DDOS hucum
 4.Ip addres Melumat
