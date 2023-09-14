@@ -38,8 +38,9 @@ print("\033[91m SITE PHP OLMAMALIDIR! \033[0m")
 hedef_ip = (input(" İP DAXİL ET:"))
 
 print("""\033[92mPort seçimi edirsiniz? yoxsa DEFAULT?
-1--(BƏLİ)
-2--(DEFAULT)\033[0m""")
+1--BƏLİ
+2--DEFAULT
+\033[0m""")
 t = input("DAXİL ET:")
 if(t == "1"):
     port = input(int("DAXİL ET:"))
