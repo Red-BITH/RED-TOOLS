@@ -218,7 +218,8 @@ elif secim == '4':
         print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
     elif secim3 == '2':
-        url = "https://ipinfo.io/" + input("İP DAXİL ET: ")
+        rabite = int(input("İP daxil et"))
+        url = "https://ipinfo.io/" + rabite
         response = urlopen(url)
         data = json.load(response)
 
@@ -260,12 +261,11 @@ else:
     secim2 = input("Qərar ver:")
     
     if secim2 == '1':
-        durdur()
         os.system("python RED_TOOL.py")
     elif secim2 == '2':
-        durdur()
+        print("ok")
     else:
-        durdur()
+        print("request= OK!")
 
 
     
