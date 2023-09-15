@@ -24,7 +24,7 @@ r = input("daxil et:")
 if(r == "1"):
     os.system("pip install requests")
     import requests
-    os.system("pip3 installl termcolor")
+    os.system("pip3 install termcolor")
     os.system("pip3 install tabulate")
     os.system("apt install python3")
     os.system("apt install dmitry")
