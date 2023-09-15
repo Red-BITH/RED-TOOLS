@@ -218,7 +218,7 @@ elif secim == '4':
         print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
     elif secim3 == '2':
-        rabite = int(input("İP daxil et"))
+        rabite = input("İP daxil et")
         url = "https://ipinfo.io/" + rabite
         response = urlopen(url)
         data = json.load(response)
@@ -266,6 +266,7 @@ else:
         print("ok")
     else:
         print("request= OK!")
+        time.sleep(1)
 
 
     
