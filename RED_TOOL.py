@@ -213,8 +213,9 @@ elif secim == '4':
             response = requests.get(url)
             data = response.json()
             return data
-            own = get_own_ip_info()
-        print_colored(json.dumps(get_own_ip_info,indent=4), Colors.YELLOW)
+
+        own_ip_info = get_own_ip_info()
+        print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
     elif secim3 == '2':
         rabite = int(input("İP daxil et"))
