@@ -58,7 +58,7 @@ if(r == "1"):
     progress = ttk.Progressbar(frame, orient="horizontal", length=200, mode="determinate")
     progress.grid(row=1, column=1, padx=10, pady=10)
 
-    root.geometry("700x500")
+    root.geometry("500x300")
     
     root.attributes('-topmost', True)
 
