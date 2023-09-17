@@ -17,11 +17,60 @@ print("""\033[94m
 # 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.    #
 # 3---əgər ilk dəfə girmirsinizsə 3 vəya başqa birşey yazın. #                               
 # BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR! #
-# YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y YAZIN.                 #
+# YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y yada e YAZIN.          #
 ##############################################################
 \033[0m""")
 r = input("daxil et:")
 if(r == "1"):
+    import sys
+    from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QProgressBar
+    from PyQt5.QtCore import Qt, QTimer
+    import pygame.mixer
+    import time
+    import os
+    os.system("sudo apt install mpv")
+    import pygame.mixer
+    import time
+
+    pygame.mixer.init()
+    pygame.mixer.music.load("fnaf3.mp3")  
+    
+    import tkinter as tk
+    from tkinter import ttk
+
+    def animate_loading():
+        progress["value"] += 1
+        if progress["value"] >= 100:
+            root.after(1000, root.destroy)  # 1 saniye sonra pencereyi kapat
+        else:
+            root.after(40, animate_loading)
+
+    root = tk.Tk()
+    root.title("Red_TOOL")
+
+    frame = ttk.Frame(root)
+    frame.pack(pady=50)
+
+    loading_label = ttk.Label(frame, text="Bashladilir...", font=("Helvetica", 12))
+    loading_label.grid(row=0, column=1, padx=10, pady=10)
+
+    progress = ttk.Progressbar(frame, orient="horizontal", length=200, mode="determinate")
+    progress.grid(row=1, column=1, padx=10, pady=10)
+
+    root.geometry("700x500")
+    
+    root.attributes('-topmost', True)
+
+# Animasyonu başlatmak için animate_loading işlevini çağırın
+    animate_loading()
+    
+
+    pygame.mixer.music.play()
+    root.mainloop()
+    
+   
+
+
     os.system("pip install requests")
     import requests
     os.system("pip3 install termcolor")
@@ -153,6 +202,7 @@ metin = ('''\033[91m
    |__/          \______/        \______/       |________/  
 \033[92m''')
 print(metin)
+pygame.mixer.music.play()
 
 print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
 print_colored("|RED BITH TOOL|", Colors.RED)
@@ -271,4 +321,3 @@ else:
 
     
     
-        
