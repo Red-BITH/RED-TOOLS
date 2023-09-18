@@ -34,7 +34,7 @@ if(r == "1"):
     !!!DİQQƏƏT!!! KOMPYUTER İSTİFADEÇİLERİ (VE YA VM) --1 
     GOOGLE SHELL VƏ S KİMİ AUDİO OLMAYAN CİHAZLAR VƏ YA BAĞLANTILAR --2 və ya başqa b.ş. !!!
     """
-    makina = input("Daxil et!)
+    makina = input("Daxil et!")
     if (makina == 1):
         pygame.mixer.init()
         pygame.mixer.music.load("fnaf3.mp3")  
