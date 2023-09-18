@@ -23,8 +23,6 @@ print("""\033[94m
 r = input("daxil et:")
 if(r == "1"):
     import sys
-    from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QProgressBar
-    from PyQt5.QtCore import Qt, QTimer
     os.system("pip install pygame")
     import pygame.mixer
     import time
