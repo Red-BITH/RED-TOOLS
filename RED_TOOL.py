@@ -9,7 +9,7 @@ import signal
 os.system("clear")
 
 
-print("""\033[31mBOOT: v1.0.4\033[0m""")
+print("""\033[31mBOOT: v1.0.9\033[0m""")
 print("""\033[94m
 ##############################################################                                                    
 # LİNUX?yoxsaTERMUX?---hansından bağlanırsınız?              #
@@ -19,7 +19,12 @@ print("""\033[94m
 # BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR! #
 # YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y yada e YAZIN.          #
 ##############################################################
+#YENİ GÜNCƏLLƏMƏDƏN SONRA GOOGLE SHEELDƏ AUDİO OLMADIĞI      #
+#ÜÇÜN VERSİYA UYĞUN, DEYİL DAHA KÖHNƏ VERSİA PAYLAŞA BİLƏRƏM.#
+##############################################################
+
 \033[0m""")
+print("""\033[31m GITHUB--- https://github.com/Red-BITH\033[0m""")
 r = input("daxil et:")
 if(r == "1"):
     import sys
@@ -28,13 +33,10 @@ if(r == "1"):
     import time
     import os
     os.system("sudo apt install mpv")
-
-    print("""
-    !!!DİQQƏƏT!!! KOMPYUTER İSTİFADEÇİLERİ (VE YA VM) --1 
-    GOOGLE SHELL VƏ S KİMİ AUDİO OLMAYAN CİHAZLAR VƏ YA BAĞLANTILAR --2 və ya başqa b.ş. !!!
-    """)
-    makina = input("Daxil et!")
-
+    import pygame.mixer
+    import time
+    pygame.mixer.init()
+    pygame.mixer.music.load("fnaf3.mp3")  
 
     
     import tkinter as tk
@@ -66,12 +68,8 @@ if(r == "1"):
 # Animasyonu başlatmak için animate_loading işlevini çağırın
     animate_loading()
         
-    if (makina == 1):
-        import pygame.mixer
-        import time
-        pygame.mixer.init()
-        pygame.mixer.music.load("fnaf3.mp3")  
-        pygame.mixer.music.play()
+
+    pygame.mixer.music.play()
     root.mainloop()
     
    
@@ -208,8 +206,7 @@ metin = ('''\033[91m
    |__/          \______/        \______/       |________/  
 \033[92m''')
 print(metin)
-if (makina == 1):
-    pygame.mixer.music.play()
+pygame.mixer.music.play()
 
 print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
 print_colored("|RED BITH TOOL|", Colors.RED)
