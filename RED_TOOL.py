@@ -34,11 +34,8 @@ if(r == "1"):
     GOOGLE SHELL VƏ S KİMİ AUDİO OLMAYAN CİHAZLAR VƏ YA BAĞLANTILAR --2 və ya başqa b.ş. !!!
     """)
     makina = input("Daxil et!")
-    if (makina == 1):
-        pygame.mixer.init()
-        pygame.mixer.music.load("fnaf3.mp3")  
-        import pygame.mixer
-        import time
+
+
     
     import tkinter as tk
     from tkinter import ttk
@@ -68,9 +65,13 @@ if(r == "1"):
 
 # Animasyonu başlatmak için animate_loading işlevini çağırın
     animate_loading()
-    
-
-    pygame.mixer.music.play()
+        
+    if (makina == 1):
+        import pygame.mixer
+        import time
+        pygame.mixer.init()
+        pygame.mixer.music.load("fnaf3.mp3")  
+        pygame.mixer.music.play()
     root.mainloop()
     
    
