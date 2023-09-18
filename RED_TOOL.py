@@ -30,10 +30,10 @@ if(r == "1"):
     os.system("sudo apt install mpv")
     import pygame.mixer
     import time
-    print"""
+    print("""
     !!!DİQQƏƏT!!! KOMPYUTER İSTİFADEÇİLERİ (VE YA VM) --1 
     GOOGLE SHELL VƏ S KİMİ AUDİO OLMAYAN CİHAZLAR VƏ YA BAĞLANTILAR --2 və ya başqa b.ş. !!!
-    """
+    """)
     makina = input("Daxil et!")
     if (makina == 1):
         pygame.mixer.init()
