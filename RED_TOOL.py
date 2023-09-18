@@ -206,7 +206,8 @@ metin = ('''\033[91m
    |__/          \______/        \______/       |________/  
 \033[92m''')
 print(metin)
-if (makina == 1) pygame.mixer.music.play()
+if (makina == 1):
+    pygame.mixer.music.play()
 
 print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
 print_colored("|RED BITH TOOL|", Colors.RED)
