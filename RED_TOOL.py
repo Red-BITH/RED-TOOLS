@@ -28,8 +28,7 @@ if(r == "1"):
     import time
     import os
     os.system("sudo apt install mpv")
-    import pygame.mixer
-    import time
+
     print("""
     !!!DİQQƏƏT!!! KOMPYUTER İSTİFADEÇİLERİ (VE YA VM) --1 
     GOOGLE SHELL VƏ S KİMİ AUDİO OLMAYAN CİHAZLAR VƏ YA BAĞLANTILAR --2 və ya başqa b.ş. !!!
@@ -38,6 +37,8 @@ if(r == "1"):
     if (makina == 1):
         pygame.mixer.init()
         pygame.mixer.music.load("fnaf3.mp3")  
+        import pygame.mixer
+        import time
     
     import tkinter as tk
     from tkinter import ttk
