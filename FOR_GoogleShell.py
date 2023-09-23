@@ -15,6 +15,7 @@ print("""\033[94m
 ##############################################################
 #GOOGLE SHELLDƏ AUDİO YOXDUR.REDTOOL DA AUDİO İÇERİKLERİ VAR #
 #BU VERSİYA UYĞUNDUR.BUNDA AUDİO İÇERİKLERİ YOXDUR!          #
+# 1 yazaraq davam et!                                        #
 ##############################################################
 
 \033[0m""")
@@ -73,58 +74,8 @@ if(r == "1"):
     from tabulate import tabulate
     from termcolor import colored
     time.sleep(1)
-    print("\033[91mYüklənir....\033[91m")
-    print("\033[91m29%\033[91m")
-    time.sleep(1)
-    print("\033[91m57%\033[91m")
-    print("\033[93mERR: Data.Config: \033[93m" + "\033[91mSTR\033[91m")
-    time.sleep(1)
-    print("\033[95mPaketler çıxardılır:\033[95m")
-    time.sleep(5)
-    print("\033[93mGit-ignore müraciət edilir:\033[0m")
-    time.sleep(5)
-    print("\033[91m89% \033[91m")
-    print("\033[93mGit-ignore işə salınır:\033[0m")
-    print("\033[92m100%\033[92m")
-    time.sleep(3)
-    os.system("clear")
-   
-elif(r == "2"):
-    os.system("pkg update")
-    os.system("apt-get update&&upgrade")
-    os.system("pkg install openssl")
-    os.system("pip install termcolor")
-    os.system("pip install requests")
-    
-    os.system("pip install requests")
-    import requests
-    
-    os.system("pip3 installl termcolor")
-    os.system("pip install tabulate")
-    os.system("apt install python3")
-    os.system("apt install dmitry")
-    os.system("apt install nmap")
-    os.system("python -m pip install --upgrade pip")
-    os.system("python -m pip install --upgrade termcolor")
-    from tabulate import tabulate
-    from termcolor import colored
-    time.sleep(1)
-    print("\033[91mYüklənir....\033[91m")
-    print("\033[91m29%\033[91m")
-    time.sleep(1)
-    print("\033[91m57%\033[91m")
-    print("\033[93mERR: Data.Config: \033[93m" + "\033[91mSTR\033[91m")
-    time.sleep(1)
-    print("\033[95mPaketler çıxardılır:\033[95m")
-    time.sleep(5)
-    print("\033[93mGit-ignore müraciət edilir:\033[0m")
-    time.sleep(5)
-    print("\033[91m89% \033[91m")
-    print("\033[93mGit-ignore işə salınır:\033[0m")
-    print("\033[92m100%\033[92m")
-    time.sleep(3)
-    os.system("clear")
-elif(r == 3):
+
+
     import os
     time.sleep(1)
     print("\033[91mYüklənir....\033[91m")
