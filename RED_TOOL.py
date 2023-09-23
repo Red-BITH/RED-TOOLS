@@ -16,8 +16,10 @@ print("""\033[94m
 # 1---linux                                                  #
 # 2---termux(Yükləmələr var və uzun çəkə bilər,normaldır.    #
 # 3---əgər ilk dəfə girmirsinizsə 3 vəya başqa birşey yazın. #                               
-# BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR! #
-# YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y yada e YAZIN.          #
+# 4---Google shell ve ya server cihazi üçün 4 yazın.         #
+#                                                            #
+#BİLƏRƏK YANLIŞ CAVAB VERSƏNİZ SİSTEMİNİZDƏ XƏTA OLA BİLƏR!  #
+#YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y yada e YAZIN.           #
 ##############################################################
 #YENİ GÜNCƏLLƏMƏDƏN SONRA GOOGLE SHEELDƏ AUDİO OLMADIĞI      #
 #ÜÇÜN VERSİYA UYĞUN, DEYİL DAHA KÖHNƏ VERSİA PAYLAŞA BİLƏRƏM.#
@@ -26,6 +28,10 @@ print("""\033[94m
 \033[0m""")
 print("""\033[31m GITHUB--- https://github.com/Red-BITH\033[0m""")
 r = input("daxil et:")
+if(r == "4"):
+    import os
+    os.system("clear")
+    os.system("python FOR_GoogleShell.py")
 if(r == "1"):
     import sys
     os.system("pip install pygame")
