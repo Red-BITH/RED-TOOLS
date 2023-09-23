@@ -38,26 +38,26 @@ if(r == "1"):
         else:
             root.after(40, animate_loading)
 
-    root = tk.Tk()
-    root.title("Red_TOOL")
+        root = tk.Tk()
+        root.title("Red_TOOL")
 
-    frame = ttk.Frame(root)
-    frame.pack(pady=50)
+        frame = ttk.Frame(root)
+        frame.pack(pady=50)
 
-    loading_label = ttk.Label(frame, text="Bashladilir...", font=("Helvetica", 12))
-    loading_label.grid(row=0, column=1, padx=10, pady=10)
+        loading_label = ttk.Label(frame, text="Bashladilir...", font=("Helvetica", 12))
+        loading_label.grid(row=0, column=1, padx=10, pady=10)
 
-    progress = ttk.Progressbar(frame, orient="horizontal", length=200, mode="determinate")
-    progress.grid(row=1, column=1, padx=10, pady=10)
+        progress = ttk.Progressbar(frame, orient="horizontal", length=200, mode="determinate")
+        progress.grid(row=1, column=1, padx=10, pady=10)
 
-    root.geometry("500x300")
+        root.geometry("500x300")
     
-    root.attributes('-topmost', True)
+        root.attributes('-topmost', True)
 
 # Animasyonu başlatmak için animate_loading işlevini çağırın
-    animate_loading()
+        animate_loading()
         
-    root.mainloop()
+        root.mainloop()
     
    
 
