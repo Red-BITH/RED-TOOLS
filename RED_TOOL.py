@@ -22,7 +22,7 @@ print("""\033[94m
 #YÜKLƏMƏ ZAMANI SUAL GƏLDİYİ SAMAN Y yada e YAZIN.           #
 ##############################################################
 #YENİ GÜNCƏLLƏMƏDƏN SONRA GOOGLE SHEELDƏ AUDİO OLMADIĞI      #
-#ÜÇÜN VERSİYA UYĞUN, DEYİL DAHA KÖHNƏ VERSİA PAYLAŞA BİLƏRƏM.#
+#ÜÇÜN VERSİYA UYĞUN DEYİL. BOOTDAN DOĞRU SEÇİMİ EDİN.        #
 ##############################################################
 
 \033[0m""")
