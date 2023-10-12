@@ -22,7 +22,7 @@ print("""\033[31m\
  ░          ░  ░    ░ ░      ░ ░     ░       ░  ░   ░     
       ░                            ░                     
 """)
-time.sleep(10)
+time.sleep(5)
 os.system("clear")
 
 print("""\033[31mBOOT: v1.0.9\033[0m""")
