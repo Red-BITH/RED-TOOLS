@@ -1,4 +1,29 @@
-# RED-TOOLS
+`Red Tool Version 1.0.9 (Build 1.0) Release Notes`
+
+`We are thrilled to announce the release of Red Tool version 1.0.9, a powerful open-source cybersecurity tool that has become a trusted choice for security professionals and enthusiasts alike. This update introduces several new features and improvements to further enhance its capabilities.`
+
+What's New:
+
+`Language Selection`: Red Tool now offers language selection for the user interface. Users can choose from Azerbaijani (aze), Turkish (tr), or English (us), making it more accessible to a global user base.
+
+`Syntax Enhancements`: Significant syntax improvements have been made to enhance the clarity and reliability of your code. This ensures a more error-free coding experience, allowing you to focus on security testing with confidence.
+
+`New Function`: We're introducing a new function that enhances your testing capabilities. This function will provide more flexibility and effectiveness in your cybersecurity tasks.
+
+`Boot Sector`: Red Tool now includes a boot sector feature, which allows you to work more effectively with boot sectors, expanding its utility for cybersecurity professionals.
+
+`Visual Refresh`: The user interface of Red Tool has undergone a visual refresh, providing a modern and more visually appealing workspace for your security testing tasks.
+
+`PC-Specific Voice Activation`: Red Tool now features a PC-specific voice activation option, making your interaction with the tool more personalized and interactive.
+
+`Enhanced Compatibility`:
+
+`Termux`: Improved support for Termux ensures a more seamless mobile cybersecurity testing experience.
+`Cloud Shell` Red Tool now integrates seamlessly with Cloud Shell for convenient cloud-based security testing.
+`50% Windows Support`: Red Tool extends its support to Windows users, optimizing the experience for Windows platforms.
+`Git Bash Support`: Full compatibility with Git Bash for efficient version control.
+
+(CREATOR)# RED-TOOLS
 `AZ ---` Hərkəsə salam.Bu project mənim kiber aləmində demək olarki ilk tool projectimdir və bu toolu düzəltmək üçün İstiklal_tea-mın dəyərli üzvü 
 m3m3nt9m9ri - nin şəxsi youtube kanalındakı https://youtu.be/MAKiHpHnnzs videodan kömək almışam.Videodan fərqli olaraq öz python və bash biliklərim ilə
 toolu çox dəyişdirmş və yeni alətlər əlavə etmişəm.
