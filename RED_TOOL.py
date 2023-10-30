@@ -13,7 +13,7 @@ print("""\033[31m\
  ░          ░  ░    ░ ░      ░ ░     ░       ░  ░   ░     
       ░                            ░                     
 """)
-time.sleep(2)
+time.sleep(0.5)
 print("""\033[31m\ 
       DİL SEÇ \ CHOOSE LANGUAGE
 
@@ -23,7 +23,7 @@ print("""\033[31m\
 +  TR. DİLİ İÇİN ---3   +
 +++++++++++++++++++++++++
 """)
-dil = input("Yaz\Write")
+dil = input("Yaz\Write: ")
 if(dil == "1"):
  import json
  from urllib.request import urlopen
@@ -271,11 +271,11 @@ if(dil == "1"):
  secim = input("Nov sec:")
 
  if secim == '1':
-     hedefsite = input('Hedef site adresi')
+     hedefsite = input('Hedef site adresi: ')
      os.system('dmitry ' + hedefsite)
 
  elif secim == '2':
-     hedef = input('Sayt adresi ve ya ip daxit et:')
+     hedef = input('Sayt adresi ve ya ip daxit et: ')
      os.system('nmap ' + hedef)
 
  elif secim == '3':
@@ -296,7 +296,7 @@ if(dil == "1"):
      while True:
          sock.sendto(bytes, (hedef_ip, hedef_port))
          sayac += 1
-         print("\033[92mHUCUM EDILIR , gonderilen byte:%s\033[0m" % (sayac))
+         print("\033[92mHUCUM EDILIR , gonderilen byte:::%s\033[0m" % (sayac))
 
  elif secim == '4':
      print_colored("""
@@ -307,8 +307,8 @@ if(dil == "1"):
      ###############################
      """, Colors.GREEN)
     
-     print_colored("OZ ip niz haqqinda ? yaxud qarsi teref?", Colors.BLUE)
-     secim3 = input("SECIMINI ET--1-Oz ip; 2-qarsi ip:")
+     print_colored("OZ ip niz haqqinda ? yaxud qarsi teref? ", Colors.BLUE)
+     secim3 = input("SECIMINI ET--1-Oz ip; 2-qarsi ip::: ")
     
      if secim3 == '1':
          def get_own_ip_info():
