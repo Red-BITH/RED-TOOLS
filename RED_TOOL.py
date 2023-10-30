@@ -16,7 +16,7 @@ print("""\033[31m\
       ░                            ░                     
 """)
 time.sleep(0.5)
-print("""\033[31m\ 
+print("""\033[31m
       DİL SEÇ \ CHOOSE LANGUAGE
 
 +++++++++++++++++++++++++
