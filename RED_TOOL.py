@@ -258,7 +258,7 @@ if(dil == "1"):
  \033[92m''')
  print(metin)
  m = r
- if(m = "1"):
+ if(m == "1"):
   pygame.mixer.music.play()
 
  print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
