@@ -257,7 +257,9 @@ if(dil == "1"):
     |__/          \______/        \______/       |________/  
  \033[92m''')
  print(metin)
- pygame.mixer.music.play()
+ m = r
+ if(m = "1"):
+  pygame.mixer.music.play()
 
  print_colored("|XOS GELMİSİNİZ|", Colors.BLUE)
  print_colored("|RED BITH TOOL|", Colors.RED)
