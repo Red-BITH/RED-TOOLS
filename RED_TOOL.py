@@ -53,6 +53,12 @@ if(dil == "1"):
  """)
  time.sleep(5)
  os.system("clear")
+ print("""\033[31m 
+ LİCENSE ni oxuduğunuz və şərtlər ilə razılaşdığınız var sayılır.
+ HEÇ BİR MƏSULİİYƏT, CAVABDEHLİK QƏBUL EDİLMİR! 
+ """)
+ time.sleep(2)
+ os.system("clear")
 
  print("""\033[31mBOOT: v1.0.9\033[0m""")
  print("""\033[94m
