@@ -355,6 +355,7 @@ if(dil == "1"):
          print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
      if(secim3 == '2'):
+      
       rabite = input("İP daxil et")
       url = "https://ipinfo.io/" + rabite
       response = urlopen(url)
@@ -374,9 +375,10 @@ if(dil == "1"):
        ["Coordinates", data.get("loc", "N/A")],
        ["Privacy Detection", data.get("privacy", "N/A")]
        ]
-       from tabulate import tabulate
-       table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
-       print_colored(table, Colors.BLUE)
+      
+      from tabulate import tabulate
+      table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
+      print_colored(table, Colors.BLUE)
 
  elif(secim == "5"):
      print("""Hazırdır.Davam edilsin?
