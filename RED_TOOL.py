@@ -374,7 +374,7 @@ if(dil == "1"):
        ["Coordinates", data.get("loc", "N/A")],
        ["Privacy Detection", data.get("privacy", "N/A")]
        ]
-
+       from tabulate import tabulate
        table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
        print_colored(table, Colors.BLUE)
 
