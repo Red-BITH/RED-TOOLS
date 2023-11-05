@@ -375,8 +375,8 @@ if(dil == "1"):
        ["Privacy Detection", data.get("privacy", "N/A")]
        ]
 
-         table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
-         print_colored(table, Colors.BLUE)
+       table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
+       print_colored(table, Colors.BLUE)
 
  elif(secim == "5"):
      print("""Hazırdır.Davam edilsin?
