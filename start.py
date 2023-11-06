@@ -38,7 +38,7 @@ if(dil == "1"):
 if(token == "3qk33xq8qmicptrev19i" or "pqc7rfd4d056i3lf67ym" or "yox" ):
   os.system("python cd.py")
 else:
-  print("SEHV TOKEN YADA SİMVOL! DAXİL EDİLDİ!")
+ print("SEHV TOKEN YADA SİMVOL! DAXİL EDİLDİ!")
 
 
 
