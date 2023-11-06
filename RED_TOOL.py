@@ -416,8 +416,8 @@ else:
         print("request= OK!")
         time.sleep(1)
 else:
-print("\033[31mSEHV TOKEN DAXİL EDİLDİ.")
-time.sleep(1)
+ print("\033[31mSEHV TOKEN DAXİL EDİLDİ.")
+ time.sleep(1)
 
     
     
