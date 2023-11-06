@@ -27,6 +27,8 @@ print("""\033[31m
 """)
 dil = input("Yaz\Write: ")
 if(dil == "1"):
+ token = input("Token Daxil et")
+if(token == "3qk33xq8qmicptrev19i" or "pqc7rfd4d056i3lf67ym"):
  import json
  from urllib.request import urlopen
  import os
