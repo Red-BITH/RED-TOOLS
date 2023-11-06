@@ -27,8 +27,15 @@ print("""\033[31m
 """)
 dil = input("Yaz\Write: ")
 if(dil == "1"):
- token = input("Token Daxil et")
-if(token == "3qk33xq8qmicptrev19i" or "pqc7rfd4d056i3lf67ym"):
+ print("""\033[33m
+ +++++++++++++++++++++++++++++++++++++++++++++++++++
+ +DİQQƏT!! SİZ BU DƏQİQƏ STANDART PAKETDƏSİNİZ.    + 
+ +EYER TOKENİNİZ VARSA TOKEN DAXİT ETME YERİNE     +
+ +DAXİL EDİN.YOXDURSA "yox" yaz.DAVAM ET(dırnaqsız)+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++
+ """)
+ token = input("Token Daxil et:::")
+if(token == "3qk33xq8qmicptrev19i" or "pqc7rfd4d056i3lf67ym" or "yox" ):
  import json
  from urllib.request import urlopen
  import os
